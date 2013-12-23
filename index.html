@@ -13,6 +13,14 @@
 			$('form').on('submit', function() {
 				ga('send', 'event', 'button', 'click', 'submit');
 			});
+			
+			$('#facebook').on('click', function() {
+				ga('send', 'event', 'link', 'click', 'facebook-signup');
+			});
+			
+			$('#contact').on('click', function() {
+				ga('send', 'event', 'link', 'click', 'contact');
+			});
 		});
     </script>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arvo">
