@@ -4,6 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vidbolt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/analytics.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+    	// Using jQuery Event API v1.3
+		
+		$(document).ready(function(){
+			$('form').on('submit', function() {
+				ga('send', 'event', 'button', 'click', 'submit');
+			});
+		});
+    </script>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arvo">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,14 +23,14 @@
     <div class="stage">
         <img src="img/vidbolt-logo.png" alt="Vidbolt logo" id="logo">
 
-        <h1>Vidbolt helps you to share and talk about video.</h1>
+        <h1>Share and talk about video with friends.</h1>
 
-        <h1>Sign up to receive an invitation to our January 2014 launch.</h1>
+        <h1>Be one of the first to receive an invitation to our January 2014 launch.</h1>
 
         <form action="http://vidbolt.us3.list-manage.com/subscribe/post" method="POST">
             <input type="hidden" name="u" value="f367283b6a33c70568b6654f0">
             <input type="hidden" name="id" value="0238650518">
-            <input type="email" name="EMAIL" placeholder="trailblazer@email.com">
+            <input type="email" name="EMAIL">
             <input type="submit" name="submit" value="Sign up now!">
         </form>
     </div>
@@ -28,13 +39,11 @@
     <div class="stage">
         <h2>About</h2>
 
-        <p>Lorem ipsum dolor sit amet nonmummy es solarus nonmummy naphereate consuous lorem ispum dolor. Lorem ipsum
-            dolor sit amet nonmummy es solarus nonmummy naphereate consuous lorem ispum dolor. Lorem ipsum dolor sit
-            amet es solarus nonmummy.</p>
+        <p>Vidbolt is a social video platform where you can: add / bolt comments to a moment in the video timeline, see comments from your friends and people you follow using our comment filters, get a visual snapshot of what people find interesting using our Vidbolt heatmap, and see your comments integrated with the video experience.</p>
 
         <div id="links">
             <a id="contact" href="mailto:info@vidbolt.com">Contact us</a>
-            <a id="facebook" href="https://facebook.com">Like us on Facebook</a>
+            <a id="facebook" href="https://facebook.com/vidbolt">Like us on Facebook</a>
         </div>
 
         <div id="footer">
