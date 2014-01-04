@@ -137,10 +137,6 @@ a#facebook{
     background-position: 1px -30px;
 }
 
-#links a#googleplus{
-	display: none;
-}
-
 #links {
     -moz-column-count: 2;
     -webkit-column-count: 2;
